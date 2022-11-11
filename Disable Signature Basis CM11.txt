@@ -1,0 +1,87 @@
+**DISABLE SIGNATURE DI ROM BASIS CM11**
+
+
+
+Sudah saya Test di Mokee a706
+
+
+1. Decompile service.jar
+
+2. buka file di ->   \classout\com\android\server\pm\PackageManagerService$InstallParams.smali
+cari .line 8153 [gunakan ctrl+f]
+   
+   sebelum :
+   
+    iget v7, p1, Landroid/content/pm/PackageInfoLite;->versionCode:I
+
+    iget v8, v3, Landroid/content/pm/PackageParser$Package;->mVersionCode:I
+
+    if-ge v7, v8, :cond_68 (tiap rom biasanya beda)
+	
+	
+rubah menjadi spt ini :
+	
+    iget v7, p1, Landroid/content/pm/PackageInfoLite;->versionCode:I
+
+    iget v8, v3, Landroid/content/pm/PackageParser$Package;->mVersionCode:I
+
+    if-ge v8, v8, :cond_68
+	
+	
+3. buka file di ->   \classout\com\android\server\pm\PackageManagerService.smali
+
+	.line 2786   (Tiap rom biasanya beda)
+    :goto_5
+    return v6
+
+    .line 2767
+    :cond_6
+    const/4 v6, -0x1
+
+    goto :goto_5
+	
+rubah menjadi spt ini :
+
+	.line 2786
+    :goto_5
+    const/4 v6, 0x0
+
+    .line 2767
+    :cond_6
+    const/4 v6, 0x0
+
+    return v6
+	
+4. Masih di PackageManagerService.smali
+
+	invoke-static {v3, v0}, Lcom/android/server/pm/PackageManagerService;->compareSignatures([Landroid/content/pm/Signature;[Landroid/content/pm/Signature;)I
+
+    move-result v3
+
+    if-nez v3, :cond_206  (Tiap rom beda)
+	
+
+rubah menjadi spt ini :
+
+	invoke-static {v3, v0}, Lcom/android/server/pm/PackageManagerService;->compareSignatures([Landroid/content/pm/Signature;[Landroid/content/pm/Signature;)I
+
+    const/4 v3, 0x0
+
+    if-eqz v3, :cond_206
+	
+	
+5. Selesai - Recompile kembali
+6. Push - bueres
+DWYOR
+ Kalo butlup mungkin anda kurang tamvan :V
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

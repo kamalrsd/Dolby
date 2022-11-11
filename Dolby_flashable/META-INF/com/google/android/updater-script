@@ -1,0 +1,56 @@
+ui_print("************************************");
+ui_print("*        Dolby Digital Plus        *");
+ui_print("*      Credit: Aguskurniawan       *");
+ui_print(".              Benifajar.          *");
+ui_print("************************************");
+ui_print("");
+ui_print("");
+
+show_progress(1.000000, 0);
+ui_print("Mounting filesystems...");
+run_program("/sbin/busybox", "mount", "/system");
+set_progress(0.100000);
+
+ui_print("Extracting files...");
+package_extract_dir("system", "/system");
+set_progress(0.300000);
+
+ui_print("Setting permissions...");
+set_perm(0, 0, 0644, "/system/app/AudioEffectService.apk");
+set_perm(0, 0, 0644, "/system/app/Ds.apk");
+set_perm(0, 0, 0644, "/system/app/DSNotification.apk");
+set_perm(0, 0, 0644, "/system/app/DSPManager.apk");
+set_perm(0, 0, 0644, "/system/app/DsUI.apk");
+set_perm(0, 0, 0644, "/system/etc/audio_effects.conf");
+set_perm(0, 0, 0644, "/system/etc/ds1-default.xml");
+set_perm(0, 0, 0644, "/system/etc/dolby_coef/coefs_48000.bin");
+set_perm(0, 0, 0644, "/system/framework/framework.jar");
+set_perm(0, 0, 0644, "/system/lib/libdsm.so");
+set_perm(0, 0, 0644, "/system/lib/libdsprofile.so");
+set_perm(0, 0, 0644, "/system/lib/libdss.so");
+set_perm(0, 0, 0644, "/system/lib/libdsucsd.so");
+set_perm(0, 0, 0644, "/system/lib/libeffects.so");
+set_perm(0, 0, 0644, "/system/lib/soundfx/libaudiopreprocessing.so");
+set_perm(0, 0, 0644, "/system/lib/soundfx/libbundlewrapper.so");
+set_perm(0, 0, 0644, "/system/lib/soundfx/libcyanogen-dsp.so");
+set_perm(0, 0, 0644, "/system/lib/soundfx/libdolby.so");
+set_perm(0, 0, 0644, "/system/lib/soundfx/libdownmix.so");
+set_perm(0, 0, 0644, "/system/lib/soundfx/libdseffect.so");
+set_perm(0, 0, 0644, "/system/lib/soundfx/libreverbwrapper.so");
+set_perm(0, 0, 0644, "/system/lib/soundfx/libvisualizer.so");
+set_perm(0, 0, 0644, "/system/lib/soundfx/libxloudwrapper.so");
+set_perm(0, 0, 0644, "/system/vendor/etc/audio_effects.conf");
+set_perm(0, 0, 0644, "/system/build.prop");
+set_progress(0.400000);
+set_progress(0.500000);
+set_progress(0.700000);
+
+# Unmounting filesystems...
+run_program("/sbin/busybox", "umount", "/system");
+set_progress(0.900000);
+
+
+set_progress(1.000000);
+ui_print("************************************");
+ui_print("*        Install Complete!         *");
+ui_print("************************************");

@@ -1,0 +1,6 @@
+1- Decompile framework.jar
+2- masukin smalinya recompile lagi...
+3- taruh framework.jar yg sudah di recompile di folder flashabale dolby yg sudah saya berikan di System/framework. atau bisa di tambahin service.jar yg udah di disable signature,ga usah gpp tp harus disable signature pakek lucky patcher
+4- buat Zip filder dolby_flashable
+5- flash
+

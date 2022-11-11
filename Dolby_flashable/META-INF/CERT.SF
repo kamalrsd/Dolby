@@ -1,0 +1,85 @@
+Signature-Version: 1.0
+Created-By: 1.0 (JRummy Apps Inc.)
+SHA1-Digest-Manifest: +etvy+3SilVo8BMY+97Eu/56W7Y=
+
+Name: system/lib/libdsprofile.so
+SHA1-Digest: 4LTC7Ey3vSecLiw5qtKEAo5343s=
+
+Name: system/lib/libdsucsd.so
+SHA1-Digest: DUHkJN1EK7W7+IwZGI2mJhl3YEY=
+
+Name: system/lib/soundfx/libdownmix.so
+SHA1-Digest: Vi3Pv974zsXgNNbkW+K9VqLdscY=
+
+Name: system/lib/soundfx/libreverbwrapper.so
+SHA1-Digest: j4G7RiEvoDuiZVN26wTcHuGtKt4=
+
+Name: system/lib/libdss.so
+SHA1-Digest: eBVPOKWRxfvEorl8jC4sIYbB6Qg=
+
+Name: system/framework/framework.jar
+SHA1-Digest: llmoCCJilODlZzdMxJ9rhzVTqeE=
+
+Name: system/lib/soundfx/libaudiopreprocessing.so
+SHA1-Digest: J3PZzmI92nIVHQN18bI/3ZdazOg=
+
+Name: system/app/AudioEffectService.apk
+SHA1-Digest: D3en2Pa5iJjFwoiTRru06Tlmc9s=
+
+Name: system/etc/audio_effects.conf
+SHA1-Digest: wivttyfUmoR/y6osJHlv0/onx7M=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: BTlDY5rj0goRBNqzkL2PQTywXns=
+
+Name: system/app/Ds.apk
+SHA1-Digest: ZN2LGH243osUEgnPZeVWB3SUkoI=
+
+Name: system/app/DsUI.apk
+SHA1-Digest: 5wGN7O3RK9waidZaxlBUZatiNUI=
+
+Name: system/vendor/etc/audio_effects.conf
+SHA1-Digest: +XKNPW9sunkSem+1XSPAL2BfsVw=
+
+Name: system/lib/soundfx/libdolby.so
+SHA1-Digest: bR5ECtjGxLpBq2yL6GLXtH5FQcs=
+
+Name: system/build.prop
+SHA1-Digest: KBwNEM055fnmaFeeZGWh7PWaepg=
+
+Name: system/lib/soundfx/libbundlewrapper.so
+SHA1-Digest: GAYYoXeb3xA7bbgymcuD7pRt98U=
+
+Name: system/lib/libdsm.so
+SHA1-Digest: FwdKLtykyvxV9v58QrDFBD9t2Uk=
+
+Name: system/lib/soundfx/libxloudwrapper.so
+SHA1-Digest: iw09M2U7XfA/FsVnJQy8/tcPfkY=
+
+Name: system/lib/soundfx/libcyanogen-dsp.so
+SHA1-Digest: UOKS2aZoS4iIgjFXKKkjyjsAmis=
+
+Name: system/app/DSPManager.apk
+SHA1-Digest: /yKepZ5ZOiM17B/R09zjRDWKTBg=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: A1e3bS87qeP0suypQEZd5JkBY8E=
+
+Name: system/etc/dolby_coef/coefs_48000.bin
+SHA1-Digest: qi/lZ4rHTZtVtThpHGEyx39nL9w=
+
+Name: system/app/DSNotification.apk
+SHA1-Digest: kwzlQOiLqrTMQOj5EfviTns5W1Y=
+
+Name: system/lib/soundfx/libdseffect.so
+SHA1-Digest: jVtE3BDYa/6wbK/Zv6OP3Bs3siI=
+
+Name: system/lib/soundfx/libvisualizer.so
+SHA1-Digest: hSR2S+Devf22iToaLm4CoIGla3c=
+
+Name: system/etc/ds1-default.xml
+SHA1-Digest: 6UcMZhRXtK4N/rlUq97Bk0N1x+E=
+
+Name: system/lib/libeffects.so
+SHA1-Digest: Z+pWqJeYsnbIpC2ppRYF3+1W1yg=
+
